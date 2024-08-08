@@ -87,7 +87,7 @@ To get started with any project in this repository, follow these steps:
 2. **Navigate to the Project Directory**
 
    ```bash
-   cd Beginner-Projects/project-name
+   cd react-beginner-projects/project-name
    ```
 
 3. **Install Dependencies**
