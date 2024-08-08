@@ -29,38 +29,47 @@ Each project is intended to provide a solid foundation and help you gain practic
 Below is a summary of the projects included in this repository:
 
 1. **To-Do List App**
+
    - **Description:** A simple task management application where users can add, edit, delete, and mark tasks as completed.
    - **Features:** Task creation, task editing, task deletion, and marking tasks as completed.
 
 2. **Weather App**
+
    - **Description:** Displays current weather information based on the user's location using the OpenWeatherMap API.
    - **Features:** Fetch weather data, display current weather conditions, and update weather based on location.
 
 3. **Calculator**
+
    - **Description:** A basic arithmetic calculator with a clean and responsive user interface.
    - **Features:** Perform basic arithmetic operations, handle user input, and display results.
 
 4. **Recipe App**
+
    - **Description:** Lists various recipes and provides detailed information about each recipe.
    - **Features:** Recipe listing, detailed view for each recipe, and basic styling.
 
 5. **Blog Post App**
+
    - **Description:** Displays a list of blog posts with the ability to view individual post details.
    - **Features:** Fetch and display blog posts, view individual posts, and basic styling.
 
 6. **Trivia Quiz App**
+
    - **Description:** A multiple-choice quiz application where users can answer questions fetched from an API.
    - **Features:** Fetch quiz questions, display multiple-choice options, and show the quiz result.
 
 7. **Contact List**
+
    - **Description:** Manage a list of contacts with options to add, edit, and delete contact information.
    - **Features:** CRUD operations for contacts, search functionality, and basic styling.
 
 8. **Movie Search App**
+
    - **Description:** Allows users to search for movies and view details using the OMDB API.
    - **Features:** Movie search, display movie details, and handle API responses.
 
 9. **Markdown Previewer**
+
    - **Description:** Converts Markdown text to HTML and displays the output in real-time.
    - **Features:** Real-time Markdown-to-HTML conversion, live preview, and basic styling.
 
