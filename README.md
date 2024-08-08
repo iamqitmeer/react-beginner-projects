@@ -32,6 +32,8 @@ Below is a summary of the projects included in this repository:
 
    - **Description:** A simple task management application where users can add, edit, delete, and mark tasks as completed.
    - **Features:** Task creation, task editing, task deletion, and marking tasks as completed.
+   - **Live Demo:** [View Live](https://todo-list-app-ten-omega.vercel.app/)
+   - **Code:** [View Code](https://github.com/iamqitmeer/react-beginner-projects/tree/main/todo-list-app)
 
 2. **Weather App**
 
