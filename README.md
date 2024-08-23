@@ -29,38 +29,47 @@ Each project is intended to provide a solid foundation and help you gain practic
 Below is a summary of the projects included in this repository:
 
 1. **Simple Blog App**
+
    - **Description:** A basic blog platform where users can create, edit, and delete posts.
    - **Key Concepts:** Components, Props, State, Event Handling, Routing.
 
 2. **Weather App**
+
    - **Description:** Fetch weather data from an API based on user input.
    - **Key Concepts:** Fetch API, useEffect, Conditional Rendering.
 
 3. **To-Do List**
+
    - **Description:** A task management app with add, edit, and delete functionalities.
    - **Key Concepts:** State Management, Lists, Keys, Form Handling.
 
 4. **Calculator**
+
    - **Description:** A simple calculator that performs basic arithmetic operations.
    - **Key Concepts:** State, Event Handling, Conditional Rendering.
 
 5. **Quiz App**
+
    - **Description:** A multiple-choice quiz with a score tracker.
    - **Key Concepts:** State, Props, Conditional Rendering.
 
 6. **Movie Search App**
+
    - **Description:** Search for movies using an external API and display the results.
    - **Key Concepts:** Fetch API, useEffect, Routing.
 
 7. **Recipe Finder**
+
    - **Description:** Search for recipes based on ingredients and display detailed instructions.
    - **Key Concepts:** Fetch API, State, Props.
 
 8. **Contact Manager**
+
    - **Description:** Manage a list of contacts with add, edit, and delete functionalities.
    - **Key Concepts:** CRUD Operations, State Management, Form Handling.
 
 9. **Markdown Previewer**
+
    - **Description:** Convert Markdown text to HTML in real-time.
    - **Key Concepts:** State Management, Controlled Components.
 
