@@ -28,56 +28,45 @@ Each project is intended to provide a solid foundation and help you gain practic
 
 Below is a summary of the projects included in this repository:
 
-1. **To-Do List App**
-
-   - **Description:** A simple task management application where users can add, edit, delete, and mark tasks as completed.
-   - **Features:** Task creation, task editing, task deletion, and marking tasks as completed.
-   - **Live Demo:** [View Live](https://todo-list-app-ten-omega.vercel.app/)
-   - **Code:** [View Code](https://github.com/iamqitmeer/react-beginner-projects/tree/main/todo-list-app)
+1. **Simple Blog App**
+   - **Description:** A basic blog platform where users can create, edit, and delete posts.
+   - **Key Concepts:** Components, Props, State, Event Handling, Routing.
 
 2. **Weather App**
+   - **Description:** Fetch weather data from an API based on user input.
+   - **Key Concepts:** Fetch API, useEffect, Conditional Rendering.
 
-   - **Description:** Displays current weather information based on the user's location using the OpenWeatherMap API.
-   - **Features:** Fetch weather data, display current weather conditions, and update weather based on location.
+3. **To-Do List**
+   - **Description:** A task management app with add, edit, and delete functionalities.
+   - **Key Concepts:** State Management, Lists, Keys, Form Handling.
 
-3. **Calculator**
+4. **Calculator**
+   - **Description:** A simple calculator that performs basic arithmetic operations.
+   - **Key Concepts:** State, Event Handling, Conditional Rendering.
 
-   - **Description:** A basic arithmetic calculator with a clean and responsive user interface.
-   - **Features:** Perform basic arithmetic operations, handle user input, and display results.
+5. **Quiz App**
+   - **Description:** A multiple-choice quiz with a score tracker.
+   - **Key Concepts:** State, Props, Conditional Rendering.
 
-4. **Recipe App**
+6. **Movie Search App**
+   - **Description:** Search for movies using an external API and display the results.
+   - **Key Concepts:** Fetch API, useEffect, Routing.
 
-   - **Description:** Lists various recipes and provides detailed information about each recipe.
-   - **Features:** Recipe listing, detailed view for each recipe, and basic styling.
+7. **Recipe Finder**
+   - **Description:** Search for recipes based on ingredients and display detailed instructions.
+   - **Key Concepts:** Fetch API, State, Props.
 
-5. **Blog Post App**
-
-   - **Description:** Displays a list of blog posts with the ability to view individual post details.
-   - **Features:** Fetch and display blog posts, view individual posts, and basic styling.
-
-6. **Trivia Quiz App**
-
-   - **Description:** A multiple-choice quiz application where users can answer questions fetched from an API.
-   - **Features:** Fetch quiz questions, display multiple-choice options, and show the quiz result.
-
-7. **Contact List**
-
-   - **Description:** Manage a list of contacts with options to add, edit, and delete contact information.
-   - **Features:** CRUD operations for contacts, search functionality, and basic styling.
-
-8. **Movie Search App**
-
-   - **Description:** Allows users to search for movies and view details using the OMDB API.
-   - **Features:** Movie search, display movie details, and handle API responses.
+8. **Contact Manager**
+   - **Description:** Manage a list of contacts with add, edit, and delete functionalities.
+   - **Key Concepts:** CRUD Operations, State Management, Form Handling.
 
 9. **Markdown Previewer**
+   - **Description:** Convert Markdown text to HTML in real-time.
+   - **Key Concepts:** State Management, Controlled Components.
 
-   - **Description:** Converts Markdown text to HTML and displays the output in real-time.
-   - **Features:** Real-time Markdown-to-HTML conversion, live preview, and basic styling.
-
-10. **Expense Tracker**
-    - **Description:** Tracks daily expenses with options to add, edit, and delete expense entries.
-    - **Features:** Expense management, expense tracking, and basic data visualization.
+10. **Portfolio Website**
+    - **Description:** A personal portfolio showcasing projects, skills, and contact information.
+    - **Key Concepts:** Components, Routing, Responsive Design.
 
 ## Features
 
