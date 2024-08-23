@@ -31,7 +31,7 @@ Below is a summary of the projects included in this repository:
 1. **Simple Blog App**
 
    - **Description:** A basic blog platform where users can create, edit, and delete posts.
-   - **Key Concepts:** Components, Props, State, Event Handling, Routing.
+   - **Key Concepts:** useState, Event Handling.
 
 2. **Weather App**
 
