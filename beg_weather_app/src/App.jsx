@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import icon from "./assets/weather.png";
 import humidity from "./assets/humidity.png";
 import wind from "./assets/wind.png";
 
