@@ -29,8 +29,8 @@ function App() {
   };
 
   return (
-    <div className="flex items-center justify-center w-full h-screen bg-blue-800">
-      {weather ? <div className="w-full shadow-lg shadow-blue-900 max-w-[500px] bg-white rounded-2xl p-6">
+    <div className="flex items-center justify-center w-full h-screen bg-blue-200 ">
+      {weather ? <div className="w-full shadow-lg shadow-blue-900 max-w-[500px] bg-blue-800 rounded-2xl p-6">
         <form onSubmit={handleSubmit} className="relative w-full">
           <input
             value={userInput}
@@ -48,14 +48,13 @@ function App() {
         </form>
         <div className="flex items-center justify-center flex-col">
           <img
-            src={`https://openweathermap.org/img/wn/04d@4x.png`}
-            className="w-60"
+            src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`} className="w-60"
             alt="Weather Icon"
           />
-          <h1 className="text-8xl font-light tracking-tighter">
+          <h1 className="text-8xl text-white font-light tracking-tighter">
             {weather.main.temp ? (weather.main.temp - 273.15).toFixed(1) + "°C" : "N/A"}
           </h1>
-          <h1 className="text-4xl font-black tracking-tighter">
+          <h1 className="text-4xl text-white font-black tracking-tighter">
             {weather.name}
           </h1>
         </div>
@@ -64,10 +63,10 @@ function App() {
           <div className="flex items-center justify-between p-6">
             <img className="w-12 mr-4" src={humidity} alt="Humidity Icon" />
             <div>
-              <h1 className="text-2xl font-bold tracking-tighter">
+              <h1 className="text-2xl text-white font-bold tracking-tighter">
                 {weather.main.humidity ?? "N/A"}%
               </h1>
-              <p className="font-semibold tracking-tighter">Humidity</p>
+              <p className="font-semibold text-white tracking-tighter">Humidity</p>
             </div>
           </div>
           <div className="flex items-center justify-between p-6">
@@ -75,10 +74,10 @@ function App() {
               <img className="w-16 mr-4" src={wind} alt="Wind Speed Icon" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold tracking-tighter">
+              <h1 className="text-2xl text-white font-bold tracking-tighter">
                 {weather.wind.speed ? (weather.wind.speed * 3.6).toFixed(1) : "N/A"} km/h
               </h1>
-              <p className="font-semibold tracking-tighter">Wind Speed</p>
+              <p className="font-semibold text-white tracking-tighter">Wind Speed</p>
             </div>
           </div>
         </div>
