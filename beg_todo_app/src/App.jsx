@@ -15,7 +15,10 @@ function App() {
   let [updateIndexNum, setUpdateIndexNum] = useState()
   let [isEdited, setIsEdited] = useState(null)
   let [isDone, setIsDone] = useState(null)
-  let [isChecked, setIsChecked] = useState(false)
+  let [isChecked, setIsChecked] = useState(null)
+  let [isCurrEdit, setIsCurrEdit] = useState()
+
+
   let addTodo = () => {
     if (userInput) {
       let newArray = [...todos]
@@ -34,6 +37,7 @@ function App() {
     setTodos(newArray)
   }
   let editTodo = (index) => {
+    setIsCurrEdit(index)
 
     setIsEdited(index)
 
@@ -62,6 +66,7 @@ function App() {
     setUpdateButtonFlag(false)
 
     setIsEdited(null)
+    setIsCurrEdit(null)
   }
 
   let isDoneFunction = (index) => (e) => {
@@ -110,24 +115,25 @@ function App() {
           {todos.map((todo, index) => (
             <div
               key={index}
-              className={(`${isEdited == index ? "bg-green-700" : "bg-gray-700"} ${isChecked && isDone == index ? "bg-yellow-600" : "bg-gray-700"} flex items-center justify-between p-3 rounded-md transition-colors ${isEdited ? "bg-green-600" : "bg-gray-700"} `)}
+              className={(`${isEdited == index ? "bg-green-700" : "bg-gray-700"} ${isChecked && isDone == index ? "bg-yellow-600" : "bg-gray-700"} flex items-center justify-between p-3 rounded-md transition-colors `)}
             >
               <div className="flex items-center">
                 <input
-                  key={index}
-                  type="checkbox"
-                  checked={isChecked && isDone == index}
-                  onChange={isDoneFunction(index)}
-                  className={(`h-6 w-6 shrink-0 rounded-sm border border-gray-600 m-2`)}
+                  disabled={isCurrEdit == index}
+                type="checkbox"
+                checked={isChecked && isDone == index}
+                onChange={isDoneFunction(index)}
+                className={(`h-6 w-6 shrink-0 rounded-sm border border-gray-600 m-2`)}
                 />
-                <span key={index}
+                <span
                   className={(`text-base text-white ${isChecked && isDone == index ? "line-through" : "no-underline"}`)}>{todo}</span>
               </div>
               <div className="flex items-center">
                 <button
                   className="inline-flex items-center text-white justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-gray-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 bg-blue-600 hover:bg-blue-700 h-8 px-4 py-1 mr-2"
                   onClick={() => editTodo(index)}
-                  disabled={isChecked}
+                  disabled={isChecked || isCurrEdit == index}
+
                 >
                   Edit
                 </button>
