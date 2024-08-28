@@ -28,54 +28,45 @@ Each project is intended to provide a solid foundation and help you gain practic
 
 Below is a summary of the projects included in this repository:
 
-1. **Simple Blog App**
+1. **Task Manager App**  
+   - **Description:** Manage tasks with options to add, edit, delete, set priority levels, and deadlines.  
+   - **Key Concepts:** State Management, Event Handling, Conditional Rendering, Sorting.
 
-   - **Description:** A basic blog platform where users can create, edit, and delete posts.
-   - **Key Concepts:** useState, Event Handling.
+2. **Expense Tracker**  
+   - **Description:** Track daily expenses and visualize monthly spending with charts and summaries.  
+   - **Key Concepts:** State Management, Chart Libraries, Fetch API, Data Visualization.
 
-2. **Weather App**
-
-   - **Description:** Fetch weather data from an API based on user input.
+3. **Weather App**  
+   - **Description:** Retrieve and display weather forecasts from an external API based on user location or input.  
    - **Key Concepts:** Fetch API, useEffect, Conditional Rendering.
 
-3. **To-Do List**
+4. **Recipe App**  
+   - **Description:** Search for recipes based on ingredients and save your favorite recipes to a list.  
+   - **Key Concepts:** Fetch API, State Management, Conditional Rendering.
 
-   - **Description:** A task management app with add, edit, and delete functionalities.
-   - **Key Concepts:** State Management, Lists, Keys, Form Handling.
+5. **Blog Platform**  
+   - **Description:** Create, edit, and delete blog posts with a simple interface for managing content.  
+   - **Key Concepts:** State Management, CRUD Operations, Form Handling.
 
-4. **Calculator**
+6. **Todo List with Categories**  
+   - **Description:** Organize tasks into categories, filter tasks based on category, and manage task details.  
+   - **Key Concepts:** State Management, Filtering, Form Handling, Conditional Rendering.
 
-   - **Description:** A simple calculator that performs basic arithmetic operations.
-   - **Key Concepts:** State, Event Handling, Conditional Rendering.
+7. **User Authentication App**  
+   - **Description:** Implement user authentication with sign-up, login, and password reset features using Firebase Auth.  
+   - **Key Concepts:** Firebase Auth, State Management, Form Handling, Routing.
 
-5. **Quiz App**
+8. **Movie Search App**  
+   - **Description:** Search for movies using an API like OMDB, display movie details, and manage search results.  
+   - **Key Concepts:** Fetch API, useEffect, Routing, Conditional Rendering.
 
-   - **Description:** A multiple-choice quiz with a score tracker.
-   - **Key Concepts:** State, Props, Conditional Rendering.
+9. **Portfolio Website**  
+   - **Description:** Design a personal portfolio site showcasing projects, skills, and a contact form.  
+   - **Key Concepts:** Components, Routing, Responsive Design, State Management.
 
-6. **Movie Search App**
-
-   - **Description:** Search for movies using an external API and display the results.
-   - **Key Concepts:** Fetch API, useEffect, Routing.
-
-7. **Recipe Finder**
-
-   - **Description:** Search for recipes based on ingredients and display detailed instructions.
-   - **Key Concepts:** Fetch API, State, Props.
-
-8. **Contact Manager**
-
-   - **Description:** Manage a list of contacts with add, edit, and delete functionalities.
-   - **Key Concepts:** CRUD Operations, State Management, Form Handling.
-
-9. **Markdown Previewer**
-
-   - **Description:** Convert Markdown text to HTML in real-time.
-   - **Key Concepts:** State Management, Controlled Components.
-
-10. **Portfolio Website**
-    - **Description:** A personal portfolio showcasing projects, skills, and contact information.
-    - **Key Concepts:** Components, Routing, Responsive Design.
+10. **E-Commerce Product Page**  
+    - **Description:** Display products with features like filters, sorting options, and a shopping cart for purchases.  
+    - **Key Concepts:** State Management, Fetch API, Conditional Rendering, Form Handling.
 
 ## Features
 
