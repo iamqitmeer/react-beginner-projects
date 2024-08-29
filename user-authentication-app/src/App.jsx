@@ -1,14 +1,35 @@
 import './App.css'
 import Login from './Screens/Login'
 import Register from './Screens/Register'
+import Home from './Screens/Home.jsx'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
 
 function App() {
 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/register",
+      element: <Register />,
+    },
+    {
+      path: "/login",
+      element: <Login />,
+    }
+  ]);
+
   return (
-    <>
-      <Register />
-      <Login />
-    </>
+    <div>
+      <RouterProvider router={router} />
+    </div>
   )
 }
 
