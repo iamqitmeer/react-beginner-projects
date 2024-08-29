@@ -5,8 +5,6 @@ import Home from './Screens/Home.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 
 function App() {
