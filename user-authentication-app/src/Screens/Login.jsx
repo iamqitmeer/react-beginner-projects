@@ -1,5 +1,6 @@
 import {
   auth,
+  onAuthStateChanged,
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
 } from "../utils/firebase";
@@ -11,6 +12,16 @@ function Login() {
   let [password, setPassword] = useState("");
   let [buttonDisabled, setButtonDisabled] = useState(false);
   let navigate = useNavigate();
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      const uid = user.uid;
+      navigate("/");
+      setIsUser(user);
+    } else {
+      console.log("User is signed out");
+    }
+  });
 
   let loginUser = () => {
     setButtonDisabled(true);

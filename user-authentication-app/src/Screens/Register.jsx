@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import {
   auth,
   createUserWithEmailAndPassword,
+  onAuthStateChanged,
   sendPasswordResetEmail,
 } from "../utils/firebase";
 
@@ -12,6 +13,16 @@ function Register() {
   let [buttonDisabled, setButtonDisabled] = useState(false);
 
   let navigate = useNavigate();
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      const uid = user.uid;
+      navigate("/");
+      setIsUser(user);
+    } else {
+      console.log("User is signed out");
+    }
+  });
 
   function registerUser() {
     setButtonDisabled(true);
