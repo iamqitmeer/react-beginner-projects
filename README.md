@@ -33,7 +33,7 @@ Below is a summary of the projects included in this repository:
    - **Key Concepts:** State Management, Event Handling, Conditional Rendering, Sorting.
 
 2. **Expense Tracker**  
-   - **Description:** Track daily expenses and visualize monthly spending with charts and summaries.  
+   - **Description:** Track daily expenses and visualize monthly spending with charts and summaries.
    - **Key Concepts:** State Management, Chart Libraries, Fetch API, Data Visualization.
 
 3. **Weather App**  
