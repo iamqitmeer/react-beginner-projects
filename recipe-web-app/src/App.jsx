@@ -3,21 +3,6 @@ import RecipeCards from './Componet/RecipeCards';
 
 const App = () => {
 
-  const recipes = [
-    {
-      title: "Spaghetti Carbonara",
-      ingredients: "pasta, eggs, cheese, bacon"
-    },
-    {
-      title: "Chicken Stir Fry",
-      ingredients: "chicken, vegetables, soy sauce"
-    },
-    {
-      title: "Vegetable Soup",
-      ingredients: "vegetables, broth, herbs"
-    }
-  ];
-
 
   return (
     <div className="container mx-auto p-12 w-full h-screen flex mt-16 flex-col">
