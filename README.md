@@ -29,44 +29,64 @@ Each project is intended to provide a solid foundation and help you gain practic
 Below is a summary of the projects included in this repository:
 
 1. **Task Manager App**  
-   - **Description:** Manage tasks with options to add, edit, delete, set priority levels, and deadlines.  
-   - **Key Concepts:** State Management, Event Handling, Conditional Rendering, Sorting.
+   - **Description**: Manage tasks with options to add, edit, delete, set priorities, and deadlines.  
+   - **Key Concepts**: State Management, Event Handling, Conditional Rendering, Forms, useState, useEffect.
 
 2. **Expense Tracker**  
-   - **Description:** Track daily expenses and visualize monthly spending with charts and summaries.
-   - **Key Concepts:** State Management, Chart Libraries, Fetch API, Data Visualization.
+   - **Description**: Track daily expenses and visualize spending trends with charts.  
+   - **Key Concepts**: State Management, useContext (for budget), Chart Libraries, Fetch API, Data Visualization.
 
 3. **Weather App**  
-   - **Description:** Retrieve and display weather forecasts from an external API based on user location or input.  
-   - **Key Concepts:** Fetch API, useEffect, Conditional Rendering.
+   - **Description**: Display current, hourly, and daily weather forecasts using a public API.  
+   - **Key Concepts**: Fetch API, useEffect, Conditional Rendering, useState, Tailwind for UI.
 
 4. **Recipe App**  
-   - **Description:** Search for recipes based on ingredients and save your favorite recipes to a list.  
-   - **Key Concepts:** Fetch API, State Management, Conditional Rendering.
+   - **Description**: Search for recipes by ingredients, save favorites, and manage recipe categories.  
+   - **Key Concepts**: Fetch API, State Management, Filtering, useEffect, useContext, UI Components with Chakra/Tailwind.
 
 5. **Blog Platform**  
-   - **Description:** Create, edit, and delete blog posts with a simple interface for managing content.  
-   - **Key Concepts:** State Management, CRUD Operations, Form Handling.
+   - **Description**: Create, edit, and delete blog posts with a simple, user-friendly interface.  
+   - **Key Concepts**: CRUD Operations, State Management, Form Handling, Routing, useEffect.
 
 6. **Todo List with Categories**  
-   - **Description:** Organize tasks into categories, filter tasks based on category, and manage task details.  
-   - **Key Concepts:** State Management, Filtering, Form Handling, Conditional Rendering.
+   - **Description**: Organize tasks into categories, filter tasks, and manage task details with priority settings.  
+   - **Key Concepts**: State Management, Filtering, Form Handling, Conditional Rendering, Routing, useContext.
 
 7. **User Authentication App**  
-   - **Description:** Implement user authentication with sign-up, login, and password reset features using Firebase Auth.  
-   - **Key Concepts:** Firebase Auth, State Management, Form Handling, Routing.
+   - **Description**: Implement user sign-up, login, and password reset functionality using Firebase Authentication.  
+   - **Key Concepts**: Firebase Auth, Form Handling, State Management, Routing, Conditional Rendering.
 
 8. **Movie Search App**  
-   - **Description:** Search for movies using an API like OMDB, display movie details, and manage search results.  
-   - **Key Concepts:** Fetch API, useEffect, Routing, Conditional Rendering.
+   - **Description**: Search for movies using an external API, display details, and manage search results.  
+   - **Key Concepts**: Fetch API, useEffect, useState, Routing, Conditional Rendering, UI Components with Tailwind.
 
 9. **Portfolio Website**  
-   - **Description:** Design a personal portfolio site showcasing projects, skills, and a contact form.  
-   - **Key Concepts:** Components, Routing, Responsive Design, State Management.
+   - **Description**: Create a personal portfolio showcasing projects, skills, and a contact form.  
+   - **Key Concepts**: Components, Routing, Responsive Design, State Management, Tailwind for UI.
 
 10. **E-Commerce Product Page**  
-    - **Description:** Display products with features like filters, sorting options, and a shopping cart for purchases.  
-    - **Key Concepts:** State Management, Fetch API, Conditional Rendering, Form Handling.
+    - **Description**: Display products with filtering, sorting options, and a shopping cart for managing purchases.  
+    - **Key Concepts**: State Management, Fetch API, useContext (for cart), Routing, Tailwind/Shadcn for UI.
+
+11. **Quiz App**  
+    - **Description**: Users can take quizzes on different topics with real-time scoring and feedback.  
+    - **Key Concepts**: State Management, Event Handling, Conditional Rendering, useEffect, Routing.
+
+12. **Markdown Previewer**  
+    - **Description**: A markdown editor that displays real-time preview of the formatted text.  
+    - **Key Concepts**: State Management, Form Handling, useState, Conditional Rendering.
+
+13. **Real-Time Notification System**  
+    - **Description**: Implement a real-time notification system for various user actions or updates.  
+    - **Key Concepts**: useEffect, WebSockets, useState, useContext, Event Handling.
+
+14. **Notes App with Tags**  
+    - **Description**: Create, edit, and organize notes with the ability to tag and filter by tags.  
+    - **Key Concepts**: State Management, useContext, Filtering, useState, CRUD Operations.
+
+15. **Personal Budget Tracker**  
+    - **Description**: Track personal income and expenses, set budgets, and visualize spending habits.  
+    - **Key Concepts**: State Management, useContext, Chart Libraries, Form Handling, Conditional Rendering.
 
 ## Features
 
