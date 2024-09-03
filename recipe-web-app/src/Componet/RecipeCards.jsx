@@ -37,15 +37,12 @@ function RecipeCards({
   // };
 
   let favouriteList = () => {
-    setIsClicked(idMeal);
-    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`)
-      .then((res) => res.json())
-      .then((data) => setRecipe(data.meals));
-      
 
-      let cloneArr = [...isFavouriteRecipe];
-      cloneArr.push(recipe);
-      setFavouriteRecipe(cloneArr);
+    setIsClicked(idMeal)
+
+    let cloneArr = [...isFavouriteRecipe];
+    cloneArr.unshift(idMeal);
+    setFavouriteRecipe(cloneArr);
   };
 
   let unFavouriteList = () => {
