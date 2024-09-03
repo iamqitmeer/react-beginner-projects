@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import RecipeCards from "../Componet/RecipeCards";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
-  let [userInput, setUserInput] = useState("biryani");
+  let [userInput, setUserInput] = useState("beef");
   let [recipe, setRecipe] = useState([]);
 
   useEffect(() => {
@@ -16,8 +17,6 @@ const Home = () => {
     return await response.json();
   };
 
-  console.log(recipe);
-
   return (
     <div className="container mx-auto p-12 w-full h-screen flex mt-16 flex-col">
       {/* Header */}
@@ -25,9 +24,12 @@ const Home = () => {
         <h1 className="text-4xl font-bold mb-6 tracking-tighter	">
           Recipe Finder
         </h1>
-        <button className="px-8 py-4 text-white rounded-lg bg-black hover:opacity-80 text-xl 	">
+        <NavLink
+          to={"/favourite"}
+          className="px-8 py-4 text-white rounded-lg bg-black hover:opacity-80 text-xl 	"
+        >
           Favorites
-        </button>
+        </NavLink>
       </div>
 
       {/* Search Bar */}
@@ -43,7 +45,7 @@ const Home = () => {
           onClick={fetchRecipe}
           className="ml-4 w-40 py-4 text-xl px-4 bg-black hover:opacity-80 text-white rounded-lg"
         >
-          <i class="ri-search-line"></i> Search
+          <i className="ri-search-line"></i> Search
         </button>
       </div>
 
@@ -74,7 +76,7 @@ const Home = () => {
             <div role="status">
               <svg
                 aria-hidden="true"
-                class="inline w-10 h-10 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                className="inline w-10 h-10 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
                 viewBox="0 0 100 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +90,7 @@ const Home = () => {
                   fill="currentFill"
                 />
               </svg>
-              <span class="sr-only">Loading...</span>
+              <span className="sr-only">Loading...</span>
             </div>
           </div>
         )}
