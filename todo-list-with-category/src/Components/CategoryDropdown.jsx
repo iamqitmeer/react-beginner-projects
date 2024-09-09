@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Select, SelectItem } from "@nextui-org/react";
 
-function CategoryDropdown() {
+function CategoryDropdown({ onClick }) {
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
   const categories = [
     {
@@ -18,18 +19,29 @@ function CategoryDropdown() {
     },
   ];
 
+  const handleChange = (e) => {
+    setSelectedCategory(categories[e.target.value - 1].name);
+    onClick(categories[e.target.value - 1].name)
+  };
+
+
   return (
     <Select
-      placeholder="Select an animal"
-      selectionMode="multiple"
+      placeholder="Select Category"
+      onChange={handleChange}
       className="w-full"
     >
       {categories.map((category) => (
-        <SelectItem className="text-[12px]" key={category.id}>
+        <SelectItem
+          key={category.id}
+          value={category.name}
+          className="text-[12px]"
+        >
           {category.name}
         </SelectItem>
       ))}
     </Select>
   );
 }
+
 export default CategoryDropdown;
