@@ -48,9 +48,9 @@ Each project is intended to provide a solid foundation and help you gain practic
    - **Description**: Search for recipes by ingredients, save favorites, and manage recipe categories.  
    - **Key Concepts**: Fetch API, State Management, Filtering, useEffect, useContext, UI Components with Chakra/Tailwind, Redux Toolkit.
 
-5. **Blog Platform**  
-   - **Description**: Create, edit, and delete blog posts with a simple, user-friendly interface.  
-   - **Key Concepts**: CRUD Operations, State Management, Form Handling, Routing, useEffect, Redux Toolkit.
+**GitHub User Search App**  
+   - **Description**: Build a single-page application to search GitHub users and display their profiles, repositories, followers, and following using GitHub’s API.  
+   - **Key Concepts**: API Integration, State Management, Routing, Responsive Design, Theming.
 
 6. **Todo List with Categories**  
    - **Description**: Organize tasks into categories, filter tasks, and manage task details with priority settings.  
