@@ -21,16 +21,16 @@ export default function Header() {
           <Input
           className="bg-[#1a243d] text-black"
             type="text"
-            placeholder="you@example.com"
+            placeholder="Search by username"
             labelPlacement="outside"
             radius="full"
             startContent={
-              <i className="ri-search-line text-xl mr-4 text-default-400 pointer-events-none flex-shrink-0"></i>
+              <i className="ri-search-line text-xl mr-2 text-default-400 pointer-events-none flex-shrink-0"></i>
             }
           />
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="primary" href="#" radius="full" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
