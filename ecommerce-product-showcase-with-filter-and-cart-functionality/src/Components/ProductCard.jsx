@@ -1,5 +1,6 @@
 import { Button, Image } from "@nextui-org/react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ProductCard({ singleProduct }) {
   console.log(singleProduct);
@@ -7,14 +8,16 @@ function ProductCard({ singleProduct }) {
   return (
     <div className=" p-4 w-[400px] rounded-xl flex items-center justify-center flex-col">
       <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+       <Link to={`/product/${singleProduct.id}`}>
         <div className="h-56 w-full">
           <Image
             width={300}
             height={220}
             alt="NextUI hero Image with delay"
             src={singleProduct.thumbnail}
-          />
+            />
         </div>
+            </Link>
         <div>
           <div className="mb-4 flex items-center justify-between gap-4">
             <span className="me-2 rounded bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">

@@ -12,6 +12,7 @@ import {
   Badge,
   Avatar,
 } from "@nextui-org/react";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -33,22 +34,30 @@ export default function Header() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem isActive>
           <Link aria-current="page" href="#">
+          <NavLink color="foreground" to="/">
             Home
+          </NavLink>
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
+        <NavLink to="/products">
             Products
+          </NavLink>
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
+        <NavLink to="/about">
             About
+          </NavLink>
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
+        <NavLink to="/contact">
             Contact
+          </NavLink>
           </Link>
         </NavbarItem>
       </NavbarContent>

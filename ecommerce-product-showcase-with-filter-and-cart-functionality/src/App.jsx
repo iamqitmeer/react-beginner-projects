@@ -5,6 +5,8 @@ import Products from "./Screens/Products";
 import Contact from "./Screens/Contact";
 import About from "./Screens/About";
 import AppLayout from "./Components/AppLayout";
+import ProductCard from "./Components/ProductCard";
+import ProductDetailPage from "./Components/ProductDetailPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -19,6 +21,10 @@ function App() {
         {
           path: "/products",
           element: <Products />,
+        },
+        {
+          path: "/product/:id",
+          element: <ProductDetailPage />,
         },
         {
           path: "/contact",

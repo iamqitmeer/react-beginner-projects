@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card, Button, Image } from "@nextui-org/react";
+import { Card, Button, Image} from "@nextui-org/react";
 import Header from "../Components/Navbar";
 import ProductCard from "../Components/ProductCard"; 
 
@@ -15,6 +15,8 @@ function Products() {
       console.log(error);
     }
   }, []);
+
+  
 
   return (
     <div className="w-full h-screen">
