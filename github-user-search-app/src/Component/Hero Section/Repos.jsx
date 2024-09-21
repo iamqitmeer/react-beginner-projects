@@ -3,8 +3,8 @@ import React from "react";
 
 function Repos() {
   return (
-    <div>
-      <div className="flex items-center justify-between">
+    <div className="bg-gray-50">
+      <div className="flex items-center justify-between w-[400px]">
         <h1>30-days-javascript-challenge-with-chai-aur-code</h1>
         <Button color="primary" variant="bordered">
           Public
