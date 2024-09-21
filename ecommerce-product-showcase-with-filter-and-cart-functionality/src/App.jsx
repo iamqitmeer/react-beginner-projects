@@ -7,13 +7,14 @@ import About from "./Screens/About";
 import AppLayout from "./Components/AppLayout";
 import ProductCard from "./Components/ProductCard";
 import ProductDetailPage from "./Components/ProductDetailPage";
+import Register from "./Screens/Register";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <AppLayout />,
-      children : [
+      children: [
         {
           path: "/",
           element: <Home />,
@@ -34,15 +35,19 @@ function App() {
           path: "/about",
           element: <About />,
         },
-      ]
-    }
+      ],
+    },
+    {
+      path: "/register",
+      element: <Register />,
+    },
   ]);
 
   return (
     <div>
-    <RouterProvider router={router} />
-  </div>
-  )
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
 export default App;

@@ -1,4 +1,4 @@
-import { Image } from "@nextui-org/react";
+import { Button, Image } from "@nextui-org/react";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -35,7 +35,7 @@ function ProductDetailPage() {
                 <h1 className="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
                   {product.title}
                 </h1>
-                
+
                 <div className="mt-4 sm:items-center sm:gap-4 sm:flex">
                   <p className="text-2xl font-extrabold text-gray-900 sm:text-3xl dark:text-white">
                     ${product.price}
@@ -110,12 +110,7 @@ function ProductDetailPage() {
                   </div>
                 </div>
                 <div className="mt-6 sm:gap-4 sm:items-center sm:flex sm:mt-8">
-                  <a
-                    href="#"
-                    title=""
-                    className="flex items-center justify-center py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-                    role="button"
-                  >
+                 <Button variant="bordered" color="primary">
                     <svg
                       className="w-5 h-5 -ms-2 me-2"
                       aria-hidden="true"
@@ -134,15 +129,10 @@ function ProductDetailPage() {
                       />
                     </svg>
                     Add to favorites
-                  </a>
-                  <a
-                    href="#"
-                    title=""
-                    className="text-white mt-4 sm:mt-0 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 flex items-center justify-center"
-                    role="button"
-                  >
+                  </Button>
+                  <Button variant="shadow" color="primary">
                     <svg
-                      className="w-5 h-5 -ms-2 me-2"
+                      className="w-5 h-5 -ms-2"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       width={24}
@@ -159,7 +149,7 @@ function ProductDetailPage() {
                       />
                     </svg>
                     Add to cart
-                  </a>
+                  </Button>
                 </div>
                 <hr className="my-6 md:my-8 border-gray-200 dark:border-gray-800" />
                 <p className="mb-6 text-gray-500 dark:text-gray-400">

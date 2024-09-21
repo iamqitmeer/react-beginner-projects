@@ -27,65 +27,69 @@ export default function Header() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-black text-inherit text-2xl cursor-pointer"><span className="text-blue-600">Sa</span>dny</p>
+          <p className="font-black text-inherit text-2xl cursor-pointer">
+            <span className="text-blue-600">Sa</span>dny
+          </p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem isActive>
-          <Link aria-current="page" href="#">
-          <NavLink color="foreground" to="/">
-            Home
-          </NavLink>
+          <Link aria-current="page">
+            <NavLink color="foreground" to="/">
+              Home
+            </NavLink>
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-        <NavLink to="/products">
-            Products
-          </NavLink>
+          <Link color="foreground">
+            <NavLink to="/about">About</NavLink>
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-        <NavLink to="/about">
-            About
-          </NavLink>
+          <Link color="foreground">
+            <NavLink to="/products">Products</NavLink>
           </Link>
         </NavbarItem>
+
         <NavbarItem>
-          <Link color="foreground" href="#">
-        <NavLink to="/contact">
-            Contact
-          </NavLink>
+          <Link color="foreground">
+            <NavLink to="/contact">Contact</NavLink>
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent  className="hidden sm:flex gap-4" justify="end">
+      <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem className="hidden lg:flex">
-        <NavbarItem className="hidden lg:flex">
-          <Badge
-            content="5"
-            className="text-sm"
-            classNames="bg-blue-200"
-            variant="solid"
-          >
-            <Button isIconOnly color="primary" variant="flat" aria-label="Like">
-              <i class="ri-shopping-cart-fill text-lg"></i>
-            </Button>
-          </Badge>
-        </NavbarItem>
+          <NavbarItem className="hidden lg:flex">
+            <Badge
+              content="5"
+              className="text-sm"
+              classNames="bg-blue-200"
+              variant="solid"
+            >
+              <Button
+                isIconOnly
+                color="primary"
+                variant="flat"
+                aria-label="Like"
+              >
+                <i class="ri-shopping-cart-fill text-lg"></i>
+              </Button>
+            </Badge>
+          </NavbarItem>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="shadow">
-            Sign Up
-          </Button>
+          <NavLink to="/register">
+            <Button color="primary" variant="shadow">
+              Sign Up
+            </Button>
+          </NavLink>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link color="foreground" className="w-full" href="#" size="lg">
+            <Link color="foreground" className="w-full" size="lg">
               {item}
             </Link>
           </NavbarMenuItem>
@@ -101,15 +105,11 @@ export default function Header() {
               <i class="ri-shopping-cart-fill text-lg"></i>
             </Button>
           </Badge>
-          <Button
-            as={Link}
-            className="w-full"
-            color="primary"
-            href="#"
-            variant="shadow"
-          >
-            Sign Up
-          </Button>
+          <NavLink to="/register">
+            <Button className="w-full" color="primary" variant="shadow">
+              Sign Up
+            </Button>
+          </NavLink>
         </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
