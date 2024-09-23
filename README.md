@@ -4,19 +4,21 @@ Welcome to the **Beginner Projects** repository! This collection features a rang
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Projects Overview](#projects-overview)
-3. [Features](#features)
-4. [Getting Started](#getting-started)
-5. [Project Structure](#project-structure)
-6. [Technologies Used](#technologies-used)
-7. [Contributing](#contributing)
-8. [License](#license)
-9. [Contact](#contact)
+- [Beginner Projects](#beginner-projects)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Projects Overview](#projects-overview)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+  - [Project Structure](#project-structure)
+  - [Technologies Used](#technologies-used)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Contact](#contact)
 
 ## Introduction
 
-Welcome to this collection of React.js projects! This repository is crafted for individuals embarking on their journey with React and web development. Each project is designed to introduce and solidify essential React concepts, making it easier for you to grasp and apply these skills in practical scenarios. 
+Welcome to this collection of React.js projects! This repository is crafted for individuals embarking on their journey with React and web development. Each project is designed to introduce and solidify essential React concepts, making it easier for you to grasp and apply these skills in practical scenarios.
 
 Here’s what i’ll focus on:
 
@@ -32,64 +34,53 @@ Each project is intended to provide a solid foundation and help you gain practic
 
 ## Projects Overview
 
-1. **Task Manager App**  
-   - **Description**: Manage tasks with options to add, edit, delete, set priorities, and deadlines.  
-   - **Key Concepts**: State Management, Event Handling, Conditional Rendering, Forms, useState, useEffect, Redux Toolkit.
+1.  **Expense Tracker**
 
-2. **Expense Tracker**  
-   - **Description**: Track daily expenses and visualize spending trends with charts.  
-   - **Key Concepts**: State Management, useContext (for budget), Chart Libraries, Fetch API, Data Visualization, Redux Toolkit.
+- **Description**: Track daily expenses and visualize spending trends with charts.
+- **Key Concepts**: State Management, useContext (for budget), Chart Libraries, Fetch API, Data Visualization, Redux Toolkit.
 
-3. **Weather App**  
-   - **Description**: Display current, hourly, and daily weather forecasts using a public API.  
-   - **Key Concepts**: Fetch API, useEffect, Conditional Rendering, useState, Tailwind for UI, Redux Toolkit.
+2.  **GitHub User Search App**
 
-4. **Recipe App**  
-   - **Description**: Search for recipes by ingredients, save favorites, and manage recipe categories.  
-   - **Key Concepts**: Fetch API, State Management, Filtering, useEffect, useContext, UI Components with Chakra/Tailwind, Redux Toolkit.
+- **Description**: Build a single-page application to search GitHub users and display their profiles, repositories, followers, and following using GitHub’s API.
+- **Key Concepts**: API Integration, State Management, Routing, Responsive Design, Theming.
 
-**GitHub User Search App**  
-   - **Description**: Build a single-page application to search GitHub users and display their profiles, repositories, followers, and following using GitHub’s API.  
-   - **Key Concepts**: API Integration, State Management, Routing, Responsive Design, Theming.
+3.  **Todo List with Categories**
 
-6. **Todo List with Categories**  
-   - **Description**: Organize tasks into categories, filter tasks, and manage task details with priority settings.  
-   - **Key Concepts**: State Management, Filtering, Form Handling, Conditional Rendering, Routing, useContext, Redux Toolkit.
+- **Description**: Organize tasks into categories, filter tasks, and manage task details with priority settings.
+- **Key Concepts**: State Management, Filtering, Form Handling, Conditional Rendering, Routing, useContext, Redux Toolkit.
 
-7. **User Authentication App**  
-   - **Description**: Implement user sign-up, login, and password reset functionality using Firebase Authentication.  
-   - **Key Concepts**: Firebase Auth, Form Handling, State Management, Routing, Conditional Rendering, Redux Toolkit.
+4.  **Portfolio Website**
 
-8. **Movie Search App**  
-   - **Description**: Search for movies using an external API, display details, and manage search results.  
-   - **Key Concepts**: Fetch API, useEffect, useState, Routing, Conditional Rendering, UI Components with Tailwind, Redux Toolkit.
+- **Description**: Create a personal portfolio showcasing projects, skills, and a contact form.
+- **Key Concepts**: Components, Routing, Responsive Design, State Management, Tailwind for UI.
 
-9. **Portfolio Website**  
-   - **Description**: Create a personal portfolio showcasing projects, skills, and a contact form.  
-   - **Key Concepts**: Components, Routing, Responsive Design, State Management, Tailwind for UI.
+5.  **E-Commerce Product Page**
 
-10. **E-Commerce Product Page**  
-    - **Description**: Display products with filtering, sorting options, and a shopping cart for managing purchases.  
+    - **Description**: Display products with filtering, sorting options, and a shopping cart for managing purchases.
     - **Key Concepts**: State Management, Fetch API, useContext (for cart), Routing, Tailwind/Shadcn for UI, Redux Toolkit.
 
-11. **Quiz App**  
-    - **Description**: Users can take quizzes on different topics with real-time scoring and feedback.  
+6.  **Quiz App**
+
+    - **Description**: Users can take quizzes on different topics with real-time scoring and feedback.
     - **Key Concepts**: State Management, Event Handling, Conditional Rendering, useEffect, Routing, Redux Toolkit.
 
-12. **Markdown Previewer**  
-    - **Description**: A markdown editor that displays real-time preview of the formatted text.  
+7.  **Markdown Previewer**
+
+    - **Description**: A markdown editor that displays real-time preview of the formatted text.
     - **Key Concepts**: State Management, Form Handling, useState, Conditional Rendering, Redux Toolkit.
 
-13. **Real-Time Notification System**  
-    - **Description**: Implement a real-time notification system for various user actions or updates.  
+8.  **Real-Time Notification System**
+
+    - **Description**: Implement a real-time notification system for various user actions or updates.
     - **Key Concepts**: useEffect, WebSockets, useState, useContext, Event Handling, Redux Toolkit.
 
-14. **Notes App with Tags**  
-    - **Description**: Create, edit, and organize notes with the ability to tag and filter by tags.  
+9.  **Notes App with Tags**
+
+    - **Description**: Create, edit, and organize notes with the ability to tag and filter by tags.
     - **Key Concepts**: State Management, useContext, Filtering, useState, CRUD Operations, Redux Toolkit.
 
-15. **Language Learning App**  
-    - **Description**: Practice and track progress in learning new languages with quizzes and vocabulary lists.  
+10. **Language Learning App**
+    - **Description**: Practice and track progress in learning new languages with quizzes and vocabulary lists.
     - **Key Concepts**: State Management, Event Handling, Conditional Rendering, useEffect, Routing, Redux Toolkit.
 
 ## Features
