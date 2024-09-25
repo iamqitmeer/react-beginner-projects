@@ -13,9 +13,9 @@ export default function App() {
       <Header />
       <Hero />
       <About />
-      <Education />
       <TechStacks />
       <ProjectsSection />
+      <Education />
       <FuturesPlan />
       <Contact />
     </>
