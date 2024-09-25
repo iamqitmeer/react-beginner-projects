@@ -14,7 +14,15 @@ import {
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Home", "About", "Tech Stacks", "Projects", "Contact"];
+  const menuItems = [
+    "Home",
+    "About",
+    "Education",
+    "Tech Stacks",
+    "Projects",
+    "Future Plans",
+    "Contact",
+  ];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
@@ -23,7 +31,7 @@ export default function Header() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
-        <NavbarBrand>
+        <NavbarBrand className="hidden sm:flex gap-4">
           <p className="font-black tracking-tighter text-blue-600 cursor-pointer text-inherit text-xl">
             Qitmeer.
           </p>
@@ -54,7 +62,7 @@ export default function Header() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} radius="full" color="primary" href="#" variant="shadow">
             Download Resume
           </Button>
         </NavbarItem>
