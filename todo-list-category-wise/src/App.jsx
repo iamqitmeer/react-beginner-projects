@@ -6,12 +6,13 @@ function App() {
   let [todoList, setTodoList] = useState([]);
   let [categoryList, setCategoryList] = useState([]);
   let [categoryValue, setCategoryValue] = useState("");
+  let [categorySelectedValue, setSelectedCategoryValue] = useState("");
 
   function handleClick() {
     let createObj = {
       title: todoValue,
       priorityLevel: priorityValue,
-      category: categoryValue,
+      category: categorySelectedValue,
     };
 
     console.log(createObj);
@@ -25,7 +26,7 @@ function App() {
 
   let handleDeleteBtn = (index) => {
     let cloneArr = [...todoList];
-    cloneArr.slice(index, 1);
+    cloneArr.splice(index, 1);
     setTodoList(cloneArr);
   };
   let handleEditBtn = (index) => {
@@ -60,8 +61,8 @@ function App() {
         </select>
         <span>Category: </span>
         <select
-          onChange={(e) => setCategoryValue(e.target.value)}
-          value={categoryValue}
+          onChange={(e) => setSelectedCategoryValue(e.target.value)}
+          value={categorySelectedValue}
         >
           {categoryList.map((ctgory) => {
             return <option value={ctgory}>{ctgory}</option>;

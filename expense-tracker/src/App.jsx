@@ -72,7 +72,7 @@ export default function App() {
           )}
         </Select>
 
-        <button onClick={handleAddExpenseBtn}>Add Expense</button>
+        <button className="bg-zinc-950 hover:bg-zinc-800" onClick={handleAddExpenseBtn}>Add Expense</button>
       </div>
 
       <h1>Recent Expenses</h1>
