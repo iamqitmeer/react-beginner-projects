@@ -37,7 +37,7 @@ let quiz = [
       "Who holds the record for the highest individual score in a One Day International (ODI) match?",
     correct_answer_index: 3,
     incorrect_answers: [
-      "Rohit Sharma",
+      "Babar Azam",
       "Martin Guptill",
       "Chris Gayle",
       "Rohit Sharma",
@@ -90,7 +90,7 @@ let quiz = [
     question: "Which cricketer has the nickname 'The Wall'?",
     correct_answer_index: 3,
     incorrect_answers: [
-      "Rahul Dravid",
+      "Imran Khan",
       "Sourav Ganguly",
       "VVS Laxman",
       "Rahul Dravid",
