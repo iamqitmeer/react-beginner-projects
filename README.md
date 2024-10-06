@@ -151,4 +151,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or feedback, you can reach out to me at [your-email@example.com](mailto:iamqitmeeer@gmail.com).
+For any questions or feedback, you can reach out to me at (mailto:iamqitmeeer@gmail.com).
