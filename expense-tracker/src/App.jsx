@@ -1,12 +1,10 @@
-import { DatePicker, Input, Select, SelectItem } from "@nextui-org/react";
 import { useEffect, useState } from "react";
+import ExpenseList from "./components/ExpenseList";
+import Summary from "./components/Summary";
+import ExpenseInputs from "./components/ExpenseInputs";
 
 export default function App() {
-  let [expenseIncome, setExpenseIncome] = useState("");
-  let [expenseCategory, setExpenseCategory] = useState("Food"); // Default value set
-  let [expenseDate, setExpenseDate] = useState(null);
   let [totalExpense, setTotalExpense] = useState(0);
-
   let [expenseList, setExpenseList] = useState([]);
 
   useEffect(() => {
@@ -15,14 +13,21 @@ export default function App() {
     }, 0);
   }, [expenseList]);
 
-  function handleAddExpenseBtn() {
+  function handleAddExpenseBtn(
+    expenseIncome,
+    expenseCategory,
+    expenseDate,
+    setExpenseCategory,
+    setExpenseDate,
+    setExpenseIncome
+  ) {
     if (!expenseIncome || !expenseCategory || !expenseDate) {
       alert("Please fill all fields");
       return;
     }
 
     let expense = {
-      income: expenseIncome,
+      income: Number.parseInt(expenseIncome),
       category: expenseCategory,
       date: expenseDate.toString(), // Converting date to a readable string format
     };
@@ -37,69 +42,21 @@ export default function App() {
 
   return (
     <div>
-      <div>
-        {/* Input for expense income */}
-        <Input
-          value={expenseIncome}
-          onChange={(e) => setExpenseIncome(e.target.value)}
-          type="number"
-          label="Amount"
-        />
+      <div className="w-full h-[500px] flex items-center border flex-wrap">
+        <ExpenseInputs onClick={handleAddExpenseBtn} />
 
-        {/* DatePicker for expense date */}
-        <DatePicker
-          value={expenseDate}
-          onChange={(date) => {
-            console.log(date); // Check what date is being returned
-            setExpenseDate(date);
-          }}
-          label="Birth date"
-        />
-
-        {/* Select for expense category */}
-        <Select
-          label="Favorite category"
-          placeholder="Select a category"
-          value={expenseCategory}
-          onChange={(e) => setExpenseCategory(e.target.value)}
-        >
-          {["Food", "Entertainment", "Transport", "Utilities", "Other"].map(
-            (category) => (
-              <SelectItem key={category} value={category}>
-                {category}
-              </SelectItem>
-            )
-          )}
-        </Select>
-
-        <button className="bg-zinc-950 hover:bg-zinc-800" onClick={handleAddExpenseBtn}>Add Expense</button>
+        <Summary totalExpense={totalExpense} />
       </div>
 
-      <h1>Recent Expenses</h1>
+      <div className="h-full p-12 flex flex-col gap-4 mt-12">
+        <h1 className="font-bold text-4xl">Total Summary</h1>
 
-      <div>
-        {expenseList.length > 0 &&
-          expenseList.map((list, index) => {
-            return (
-              <div
-                className="w-full rounded-xl p-4 bg-gray-200 flex items-center justify-between my-4"
-                key={index}
-              >
-                <div>
-                  <h1 className="text-lg font-semibold">{list.category}</h1>
-                  <p>{list.date}</p>
-                </div>
-                <h1 className="text-lg font-semibold">${list.income}</h1>
-              </div>
-            );
-          })}
-      </div>
-      <h1>Total Summary</h1>
-
-      <div>
-
-Total Expense - {totalExpense}
-
+        <div>
+          {expenseList.length > 0 &&
+            expenseList.map((list, index) => {
+              return <ExpenseList list={list} key={index} />;
+            })}
+        </div>
       </div>
     </div>
   );
