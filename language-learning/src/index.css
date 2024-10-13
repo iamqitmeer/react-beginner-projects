@@ -1,0 +1,35 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+padding: 30px;
+}
+
+.right {
+  /* w-[50%] h-[600px] p-4 rounded-2xl text-white bg-zinc-950 */
+
+  width: 50%;
+  height: 600px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(24, 23, 23);
+}
+
+.left{
+  width: 50%;
+  height: 600px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(76, 74, 74);
+}
