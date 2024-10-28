@@ -4,14 +4,43 @@ import Summary from "./components/Summary";
 import ExpenseInputs from "./components/ExpenseInputs";
 
 export default function App() {
-  let [totalExpense, setTotalExpense] = useState(0);
-  let [expenseList, setExpenseList] = useState([]);
+  const [totalExpense, setTotalExpense] = useState(0);
+  const [averageExpense, setAverageExpense] = useState(0);
+  const [expenseCount, setExpenseCount] = useState(0);
+  const [expenseList, setExpenseList] = useState([]);
 
+  // Load expenses from Local Storage only on the initial mount
   useEffect(() => {
-    expenseList.reduce((acc, curr) => {
-      return setTotalExpense(acc + curr.income);
-    }, 0);
-  }, [expenseList]);
+    const savedExpenses = localStorage.getItem("expenseList");
+    if (savedExpenses) {
+      try {
+        const parsedExpenses = JSON.parse(savedExpenses);
+        setExpenseList(parsedExpenses);
+      } catch (error) {
+        console.error("Failed to parse expenses from Local Storage", error);
+      }
+    }
+  }, []); // Empty dependency array to run only once on mount
+
+  // Calculate total, average, and count whenever expenseList changes
+  useEffect(() => {
+    const count = expenseList.length;
+    setExpenseCount(count);
+
+    if (count > 0) {
+      const total = expenseList.reduce((acc, curr) => acc + curr.income, 0);
+      setTotalExpense(total);
+
+      const average = total / count;
+      setAverageExpense(average);
+    } else {
+      setTotalExpense(0);
+      setAverageExpense(0);
+    }
+
+    // Save updated expenseList to Local Storage
+    localStorage.setItem("expenseList", JSON.stringify(expenseList));
+  }, [expenseList]); // Runs whenever expenseList updates
 
   function handleAddExpenseBtn(
     expenseIncome,
@@ -26,10 +55,10 @@ export default function App() {
       return;
     }
 
-    let expense = {
-      income: Number.parseInt(expenseIncome),
+    const expense = {
+      income: Number.parseInt(expenseIncome, 10),
       category: expenseCategory,
-      date: expenseDate.toString(), // Converting date to a readable string format
+      date: expenseDate.toString(),
     };
 
     setExpenseList([...expenseList, expense]);
@@ -44,8 +73,7 @@ export default function App() {
     <div>
       <div className="w-full h-[500px] flex items-center border flex-wrap">
         <ExpenseInputs onClick={handleAddExpenseBtn} />
-
-        <Summary totalExpense={totalExpense} />
+        <Summary totalExpense={totalExpense} averageExpense={averageExpense} expenseCount={expenseCount} />
       </div>
 
       <div className="h-full p-12 flex flex-col gap-4 mt-12">
